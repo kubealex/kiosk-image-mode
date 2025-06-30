@@ -1,9 +1,4 @@
-<<<<<<< HEAD
 FROM registry.stage.redhat.io/rhel10/rhel-bootc:10.0
-=======
-FROM registry.redhat.io/rhel9/rhel-bootc:9.6
-#FROM registry.redhat.io/rhel10/rhel-bootc:10.0
->>>>>>> e69dd247e7db77eeb21f05459b1193350c044c2f
 
 RUN dnf group install -y GNOME \
     && dnf -y clean all \
