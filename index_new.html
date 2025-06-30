@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Red Hat Solutions 2.0: Driving Enterprise Open Innovation</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        /* Custom styles for the Inter font and default body settings */
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        /* Define Red Hat inspired colors for Tailwind */
+        .bg-red-hat-primary { background-color: #EE0000; }
+        .text-red-hat-primary { color: #EE0000; }
+        .hover\:bg-red-hat-dark { background-color: #CC0000; }
+        .bg-gray-red-hat { background-color: #333; }
+        .text-gray-red-hat { color: #333; }
+        .hover\:text-red-hat-light { color: #FF4444; }
+
+        /* Keyframe for a subtle pulse effect on buttons */
+        @keyframes pulse {
+            0%, 100% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.02);
+            }
+        }
+        .animate-pulse-subtle {
+            animation: pulse 2s infinite ease-in-out;
+        }
+    </style>
+</head>
+<body class="bg-gray-100 min-h-screen flex flex-col antialiased">
+
+    <!-- Header Section - Red Hat Red -->
+    <header class="bg-red-hat-primary text-white shadow-lg py-4 px-6 md:px-12 rounded-b-lg">
+        <div class="container mx-auto flex flex-col md:flex-row justify-between items-center">
+            <a href="#" class="text-3xl font-extrabold mb-4 md:mb-0">
+                Red Hat Solutions
+            </a>
+            <nav>
+                <ul class="flex space-x-6">
+                    <li><a href="#" class="hover:text-red-hat-light transition duration-300 rounded-md px-3 py-2 font-medium">Home</a></li>
+                    <li><a href="#" class="hover:text-red-hat-light transition duration-300 rounded-md px-3 py-2 font-medium">OpenShift</a></li>
+                    <li><a href="#" class="hover:text-red-hat-light transition duration-300 rounded-md px-3 py-2 font-medium">Linux</a></li>
+                    <li><a href="#" class="hover:text-red-hat-light transition duration-300 rounded-md px-3 py-2 font-medium">Automation</a></li>
+                    <li><a href="#" class="hover:text-red-hat-light transition duration-300 rounded-md px-3 py-2 font-medium">Insights</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content Area -->
+    <main class="flex-grow container mx-auto px-6 py-8 md:py-12">
+        <section class="bg-white p-8 md:p-12 rounded-lg shadow-xl mb-8 border-t-4 border-red-hat-primary">
+            <h1 class="text-4xl lg:text-5xl font-extrabold text-gray-red-hat mb-6">
+                Empower Your Enterprise with Open Innovation, Red Hat 2.0
+            </h1>
+            <p class="text-lg text-gray-700 leading-relaxed mb-6">
+                At Red Hat, we believe in the power of open source to transform businesses.
+                From the datacenter to the cloud to the edge, our enterprise-grade open source solutions
+                deliver the agility, stability, and security you need to innovate faster. We're continuously
+                evolving to meet the demands of modern IT, empowering you with the tools for tomorrow's challenges.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4">
+                <button class="bg-red-hat-primary hover:bg-red-hat-dark text-white font-semibold py-3 px-6 rounded-lg shadow-md transition duration-300 transform hover:scale-105 animate-pulse-subtle">
+                    Explore Our Portfolio
+                </button>
+                <button class="bg-gray-200 hover:bg-gray-300 text-gray-800 font-semibold py-3 px-6 rounded-lg shadow-md transition duration-300 transform hover:scale-105">
+                    Get a Demo
+                </button>
+            </div>
+        </section>
+
+        <section class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-8">
+            <!-- Feature Card 1: Hybrid Cloud -->
+            <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition duration-300 transform hover:-translate-y-1 border-l-4 border-red-hat-primary">
+                <h3 class="text-2xl font-bold text-gray-800 mb-3">Hybrid Cloud Platform</h3>
+                <p class="text-gray-600">Build, deploy, and manage applications anywhere with Red Hat OpenShift, the industry's leading enterprise Kubernetes platform.</p>
+            </div>
+            <!-- Feature Card 2: Enterprise Linux -->
+            <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition duration-300 transform hover:-translate-y-1 border-l-4 border-red-hat-primary">
+                <h3 class="text-2xl font-bold text-gray-800 mb-3">Trusted Linux Foundation</h3>
+                <p class="text-gray-600">Red Hat Enterprise Linux provides a stable, secure, and high-performing foundation for your critical workloads.</p>
+            </div>
+            <!-- Feature Card 3: Automation -->
+            <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition duration-300 transform hover:-translate-y-1 border-l-4 border-red-hat-primary">
+                <h3 class="text-2xl font-bold text-gray-800 mb-3">Powerful Automation</h3>
+                <p class="text-gray-600">Automate your IT operations and accelerate innovation with Red Hat Ansible Automation Platform.</p>
+            </div>
+        </section>
+
+        <!-- New Section: What's New in 2.0 -->
+        <section class="bg-white p-8 md:p-12 rounded-lg shadow-xl mb-8 border-t-4 border-gray-red-hat">
+            <h2 class="text-3xl font-extrabold text-gray-red-hat mb-6 text-center">What's New in 2.0</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div>
+                    <h3 class="text-2xl font-bold text-gray-800 mb-2">Enhanced Edge Capabilities</h3>
+                    <p class="text-gray-600 mb-4">Leverage OpenShift's expanded features for robust, secure deployments at the network edge, bringing compute closer to data generation.</p>
+                    <h3 class="text-2xl font-bold text-gray-800 mb-2">AI/ML Integration Accelerators</h3>
+                    <p class="text-gray-600">New toolkits and frameworks to seamlessly integrate AI and Machine Learning workloads across our platforms, from development to deployment.</p>
+                </div>
+                <div>
+                    <h3 class="text-2xl font-bold text-gray-800 mb-2">Advanced Security Insights</h3>
+                    <p class="text-gray-600 mb-4">Deeper integration with Red Hat Insights provides proactive security recommendations and simplified compliance management.</p>
+                    <h3 class="text-2xl font-bold text-gray-800 mb-2">Developer Experience Focus</h3>
+                    <p class="text-gray-600">Streamlined workflows, improved developer tools, and comprehensive documentation to boost productivity and accelerate time-to-market.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- New Section: Customer Success Stories -->
+        <section class="bg-red-hat-primary text-white p-8 md:p-12 rounded-lg shadow-xl mb-8 text-center">
+            <h2 class="text-3xl font-extrabold mb-4">Our Customers' Success, Powered by Red Hat</h2>
+            <p class="text-lg leading-relaxed mb-6">
+                Hear directly from enterprises around the globe who are achieving remarkable results
+                and driving innovation with Red Hat open source solutions.
+            </p>
+            <div class="bg-white p-6 rounded-lg shadow-md text-gray-800">
+                <p class="italic text-xl mb-4">"Red Hat's platform transformed our operations, giving us the flexibility and performance we needed to scale rapidly. A true partnership in innovation."</p>
+                <p class="font-semibold">- Leading Global Financial Institution</p>
+            </div>
+            <button class="mt-8 bg-white hover:bg-gray-200 text-red-hat-primary font-semibold py-3 px-6 rounded-lg shadow-md transition duration-300 transform hover:scale-105">
+                Read More Customer Stories
+            </button>
+        </section>
+
+        <section class="bg-white p-8 md:p-12 rounded-lg shadow-xl mb-8 text-center">
+            <h2 class="text-3xl font-extrabold text-gray-red-hat mb-4">Join the Open Source Community</h2>
+            <p class="text-lg text-gray-700 leading-relaxed mb-6">
+                Collaboration is at the heart of everything we do. Engage with a vibrant community
+                of developers, partners, and customers shaping the future of enterprise technology.
+            </p>
+            <button class="bg-red-hat-primary hover:bg-red-hat-dark text-white font-semibold py-3 px-6 rounded-lg shadow-md transition duration-300 transform hover:scale-105">
+                Learn More About Our Community
+            </button>
+        </section>
+    </main>
+
+    <!-- Footer Section - Darker Gray -->
+    <footer class="bg-gray-red-hat text-white py-6 px-6 md:px-12 rounded-t-lg mt-8">
+        <div class="container mx-auto text-center">
+            <p>&copy; 2025 Red Hat-Inspired Demo. All rights reserved.</p>
+            <p class="text-sm mt-2">
+                <a href="#" class="hover:underline">Legal</a> |
+                <a href="#" class="hover:underline">Privacy Statement</a>
+            </p>
+        </div>
+    </footer>
+
+</body>
+</html>
+

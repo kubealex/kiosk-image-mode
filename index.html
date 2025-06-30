@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Red Hat Solutions: Empowering Open Innovation</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        /* Custom styles for the Inter font and default body settings */
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        /* Define Red Hat inspired colors for Tailwind */
+        .bg-red-hat-primary { background-color: #EE0000; }
+        .text-red-hat-primary { color: #EE0000; }
+        .hover\:bg-red-hat-dark { background-color: #CC0000; }
+        .bg-gray-red-hat { background-color: #333; }
+        .text-gray-red-hat { color: #333; }
+        .hover\:text-red-hat-light { color: #FF4444; }
+    </style>
+</head>
+<body class="bg-gray-100 min-h-screen flex flex-col antialiased">
+
+    <!-- Header Section - Red Hat Red -->
+    <header class="bg-red-hat-primary text-white shadow-lg py-4 px-6 md:px-12 rounded-b-lg">
+        <div class="container mx-auto flex flex-col md:flex-row justify-between items-center">
+            <a href="#" class="text-3xl font-extrabold mb-4 md:mb-0">
+                Red Hat Solutions
+            </a>
+            <nav>
+                <ul class="flex space-x-6">
+                    <li><a href="#" class="hover:text-red-hat-light transition duration-300 rounded-md px-3 py-2 font-medium">Home</a></li>
+                    <li><a href="#" class="hover:text-red-hat-light transition duration-300 rounded-md px-3 py-2 font-medium">OpenShift</a></li>
+                    <li><a href="#" class="hover:text-red-hat-light transition duration-300 rounded-md px-3 py-2 font-medium">Linux</a></li>
+                    <li><a href="#" class="hover:text-red-hat-light transition duration-300 rounded-md px-3 py-2 font-medium">Automation</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content Area -->
+    <main class="flex-grow container mx-auto px-6 py-8 md:py-12">
+        <section class="bg-white p-8 md:p-12 rounded-lg shadow-xl mb-8 border-t-4 border-red-hat-primary">
+            <h1 class="text-4xl lg:text-5xl font-extrabold text-gray-red-hat mb-6">
+                Empower Your Enterprise with Open Innovation
+            </h1>
+            <p class="text-lg text-gray-700 leading-relaxed mb-6">
+                At Red Hat, we believe in the power of open source to transform businesses.
+                From the datacenter to the cloud to the edge, our enterprise-grade open source solutions
+                deliver the agility, stability, and security you need to innovate faster.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4">
+                <button class="bg-red-hat-primary hover:bg-red-hat-dark text-white font-semibold py-3 px-6 rounded-lg shadow-md transition duration-300 transform hover:scale-105">
+                    Explore Our Portfolio
+                </button>
+                <button class="bg-gray-200 hover:bg-gray-300 text-gray-800 font-semibold py-3 px-6 rounded-lg shadow-md transition duration-300 transform hover:scale-105">
+                    Get a Demo
+                </button>
+            </div>
+        </section>
+
+        <section class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-8">
+            <!-- Feature Card 1: Hybrid Cloud -->
+            <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition duration-300 transform hover:-translate-y-1 border-l-4 border-red-hat-primary">
+                <h3 class="text-2xl font-bold text-gray-800 mb-3">Hybrid Cloud Platform</h3>
+                <p class="text-gray-600">Build, deploy, and manage applications anywhere with Red Hat OpenShift, the industry's leading enterprise Kubernetes platform.</p>
+            </div>
+            <!-- Feature Card 2: Enterprise Linux -->
+            <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition duration-300 transform hover:-translate-y-1 border-l-4 border-red-hat-primary">
+                <h3 class="text-2xl font-bold text-gray-800 mb-3">Trusted Linux Foundation</h3>
+                <p class="text-gray-600">Red Hat Enterprise Linux provides a stable, secure, and high-performing foundation for your critical workloads.</p>
+            </div>
+            <!-- Feature Card 3: Automation -->
+            <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition duration-300 transform hover:-translate-y-1 border-l-4 border-red-hat-primary">
+                <h3 class="text-2xl font-bold text-gray-800 mb-3">Powerful Automation</h3>
+                <p class="text-gray-600">Automate your IT operations and accelerate innovation with Red Hat Ansible Automation Platform.</p>
+            </div>
+        </section>
+
+        <section class="bg-white p-8 md:p-12 rounded-lg shadow-xl mb-8 text-center">
+            <h2 class="text-3xl font-extrabold text-gray-red-hat mb-4">Join the Open Source Community</h2>
+            <p class="text-lg text-gray-700 leading-relaxed mb-6">
+                Collaboration is at the heart of everything we do. Engage with a vibrant community
+                of developers, partners, and customers shaping the future of enterprise technology.
+            </p>
+            <button class="bg-red-hat-primary hover:bg-red-hat-dark text-white font-semibold py-3 px-6 rounded-lg shadow-md transition duration-300 transform hover:scale-105">
+                Learn More About Our Community
+            </button>
+        </section>
+    </main>
+
+    <!-- Footer Section - Darker Gray -->
+    <footer class="bg-gray-red-hat text-white py-6 px-6 md:px-12 rounded-t-lg mt-8">
+        <div class="container mx-auto text-center">
+            <p>&copy; 2025 Red Hat-Inspired Demo. All rights reserved.</p>
+            <p class="text-sm mt-2">
+                <a href="#" class="hover:underline">Legal</a> |
+                <a href="#" class="hover:underline">Privacy Statement</a>
+            </p>
+        </div>
+    </footer>
+
+</body>
+</html>
+

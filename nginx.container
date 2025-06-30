@@ -1,0 +1,10 @@
+[Container]
+Image=quay.io/kubealex/nginx-lbi:latest
+GlobalArgs=--storage-opt=additionalimagestore=/usr/lib/bootc/storage
+PublishPort=80:8080
+[Unit]
+Description=Custom NGINX server
+[Install]
+WantedBy=default.target
+[Service]
+Restart=always
