@@ -1,7 +1,7 @@
 FROM registry.redhat.io/rhel10/rhel-bootc:10.0
 
 RUN dnf group install -y GNOME \
-    && dnf -y install tmux mkpasswd firefox \
+    && dnf -y install tmux mkpasswd firefox audit setroubleshoot-server \
     && systemctl set-default graphical.target \
     && dnf -y clean all
 
