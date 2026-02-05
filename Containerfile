@@ -1,4 +1,4 @@
-FROM registry.redhat.io/rhel10/rhel-bootc:10.0
+FROM registry.redhat.io/rhel10/rhel-bootc:latest
 
 RUN dnf group install -y GNOME \
     && dnf -y install tmux mkpasswd firefox audit setroubleshoot-server \
