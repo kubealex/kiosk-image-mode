@@ -1,0 +1,15 @@
+[Unit]
+Description=Register machine with Red Hat Insights (rhc)
+After=network-online.target
+Wants=network-online.target
+ConditionPathExists=/etc/rhc/.run_rhc_connect_next_boot
+
+[Service]
+Type=oneshot
+EnvironmentFile=/etc/rhc/.rhc_connect_credentials
+ExecStart=/usr/bin/rhc connect --activation-key=${RHC_ACT_KEY} --organization=${RHC_ORG_ID}
+ExecStartPost=/bin/rm -f /etc/rhc/.run_rhc_connect_next_boot
+RemainAfterExit=yes
+
+[Install]
+WantedBy=multi-user.target

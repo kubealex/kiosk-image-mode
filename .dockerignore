@@ -1,0 +1,7 @@
+# Exclude development and version control artifacts from the build context.
+# NOTE: Secret files (auth.json, .rhc_connect_credentials) are intentionally
+# NOT excluded here — they must be present in the build context so that
+# COPY etc/ /etc/ can include them. Keep them out of source control via
+# .gitignore and inject them at build time via your CI/CD pipeline.
+.git
+README.md
