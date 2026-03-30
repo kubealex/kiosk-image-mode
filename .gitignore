@@ -3,3 +3,5 @@
 # =============================================================================
 etc/ostree/auth.json
 etc/rhc/.rhc_connect_credentials
+etc/flightctl/config.yaml
+etc/yum.repos.d/custom.repo

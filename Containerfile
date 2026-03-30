@@ -6,7 +6,9 @@ FROM registry.redhat.io/rhel10/rhel-bootc:10.1
 # Packages are installed and cache cleaned in a single layer to minimize image size.
 # gnome-initial-setup and gnome-tour are removed to suppress first-boot pop-ups.
 # =============================================================================
-RUN dnf -y install tmux mkpasswd git unzip curl && \
+COPY etc/yum.repos.d/ /etc/yum.repos.d/
+
+RUN dnf -y install tmux mkpasswd git unzip curl insights-client flightctl-agent && \
     dnf group install -y --allowerasing "GNOME" "Fonts" && \
     dnf remove -y gnome-initial-setup gnome-tour && \
     dnf clean all
