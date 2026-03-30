@@ -66,7 +66,7 @@ COPY usr/ /usr/
 # rhc-connect.service registers the machine with Red Hat Insights on first boot.
 # Enabled here after the /usr tree is already in place via the COPY above.
 # =============================================================================
-RUN systemctl enable rhc-connect && \
+RUN systemctl enable rhc-connect flightctl-agent && \
     touch /etc/rhc/.run_rhc_connect_next_boot
 
 # =============================================================================
