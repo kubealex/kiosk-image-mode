@@ -8,7 +8,7 @@ FROM registry.redhat.io/rhel10/rhel-bootc:10.1
 # =============================================================================
 COPY etc/yum.repos.d/ /etc/yum.repos.d/
 
-RUN dnf -y install tmux mkpasswd git unzip curl insights-client flightctl-agent && \
+RUN dnf -y install tmux mkpasswd git unzip curl insights-client flightctl-agent flightctl-selinux && \
     dnf group install -y --allowerasing "GNOME" "Fonts" && \
     dnf remove -y gnome-initial-setup gnome-tour && \
     dnf clean all
